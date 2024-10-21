@@ -7,12 +7,11 @@ use Livewire\Attributes\On;
 
 class Modal extends Component
 {
-    public $simpleModel = false;
+    public $text = '';
 
-    #[On('post-created')]
-    public function updatePostList()
+    public function pressButton()
     {
-        $this->simpleModel = true;
+        $this->text = '12312321231321321';
     }
 
     public function render()
